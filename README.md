@@ -1,6 +1,6 @@
-# killanweb
+# WEB 2.0
 
-> Killan uusi web
+> Killan sivut 2.0
 
 ## Build Setup
 
