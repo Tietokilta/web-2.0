@@ -26,9 +26,16 @@ export default {
     '@/assets/scss/main.scss'
   ],
   /*
+  ** Router options for localization
+  */
+  router: {
+    middleware: 'i18n'
+  },
+  /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/i18n.js'
   ],
   /*
   ** Nuxt.js modules
