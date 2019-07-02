@@ -7,10 +7,7 @@
 <script>
 
 export default {
-  name: 'Home',
-  mounted() {
-    console.log(this.$i18n.messages)
-  }
+  name: 'Home'
 }
 </script>
 

@@ -1,5 +1,4 @@
 import { i18n } from './plugins/i18n'
-console.log(i18n);
 export default {
   mode: 'universal',
   /*

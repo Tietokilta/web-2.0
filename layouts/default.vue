@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <v-locale />
     <nav class="navbar">
       <ul>
         <li>{{ $t('navigation.guild') }}</li>
@@ -11,6 +12,16 @@
     <nuxt />
   </div>
 </template>
+
+<script>
+import VLocale from '../components/locale'
+export default {
+  name: 'DefaultLayout',
+  components: {
+    VLocale
+  }
+}
+</script>
 
 <style>
 
