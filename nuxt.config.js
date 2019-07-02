@@ -23,19 +23,19 @@ export default {
   ** Global CSS
   */
   css: [
-    '@assets/scss/main.scss'
+    '@/assets/scss/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    "@nuxtjs/markdownit"
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    "@nuxtjs/markdownit"
   ],
   /*
   ** Build configuration
