@@ -1,4 +1,5 @@
-
+import { i18n } from './plugins/i18n'
+console.log(i18n);
 export default {
   mode: 'universal',
   /*
@@ -26,23 +27,17 @@ export default {
     '@/assets/scss/main.scss'
   ],
   /*
-  ** Router options for localization
-  */
-  router: {
-    middleware: 'i18n'
-  },
-  /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/i18n.js'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/eslint-module',
-    "@nuxtjs/markdownit"
+    '@nuxtjs/markdownit',
+    ['nuxt-i18n', i18n]
   ],
   /*
   ** Build configuration
