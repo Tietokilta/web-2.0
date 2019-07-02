@@ -1,5 +1,4 @@
 import messages from '../locale'
-console.log("Messages", messages);
 export const i18n = {
   locales: [
     {
