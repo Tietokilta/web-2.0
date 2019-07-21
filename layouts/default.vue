@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <nav class="navbar">
-      <ul>
-        <li>{{ $t('navigation.guild') }}</li>
-        <li>{{ $t('navigation.freshmen') }}</li>
-        <li>{{ $t('navigation.abi') }}</li>
-        <li>{{ $t('navigation.companies') }}</li>
-      </ul>
+      <div class="navbar_menu">
+        <nuxt-link class="navbar__item" to="/guild">{{ $t('navigation.guild') }}</nuxt-link>
+        <nuxt-link class="navbar__item" to="/freshmen">{{ $t('navigation.freshmen') }}</nuxt-link>
+        <nuxt-link class="navbar__item" to="/abi">{{ $t('navigation.abi') }}</nuxt-link>
+        <nuxt-link class="navbar__item" to="/companies">{{ $t('navigation.companies') }}</nuxt-link>
+      </div>
     </nav>
     <nuxt />
   </div>
