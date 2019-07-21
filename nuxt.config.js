@@ -37,7 +37,7 @@ export default {
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/markdownit',
-    ['nuxt-i18n', i18n]
+    ['nuxt-i18n', i18n],
   ],
   /*
   ** Build configuration
