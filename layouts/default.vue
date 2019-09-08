@@ -13,6 +13,9 @@
         <nuxt-link class="navbar__item" to="/abi">
           {{ $t('navigation.abi') }}
         </nuxt-link>
+        <nuxt-link class="navbar__item" to="/members">
+          {{ $t('navigation.members') }}
+        </nuxt-link>
         <nuxt-link class="navbar__item" to="/companies">
           {{ $t('navigation.companies') }}
         </nuxt-link>
