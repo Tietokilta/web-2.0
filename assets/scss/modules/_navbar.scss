@@ -2,7 +2,8 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 0rem;
-  background-color: rgba(25, 25, 25, 0.52);
+  font-size: 0; //to get rid of the funky spaces
+  background-color: black;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,10 @@
     flex-direction: column;
   }
 }
+.navbar__menu--active {
+  display: flex;
+  margin-top: 3.5rem;
+}
 
 .navbar__icon {
   align-content: left;
@@ -29,11 +34,7 @@
 }
 
 .burger:hover {
-  background-color: rgba(0,0,0,0.2);
-}
-.navbar__menu--active {
-  display: flex;
-  margin-top: 3.5rem;
+  background-color:black;
 }
 
 .navbar__item {
@@ -41,12 +42,27 @@
   font-size: 2rem;
   color:inherit;
   text-decoration: none;
-  padding: 0.2rem;
-  color: $black;
+  color: whitesmoke;
+  display: inline-block;
 }
 
-.navbar__item:active:focus {
-  color: $white;
+.navbar__clickable {
+  padding: 0rem 0.5rem;
+}
+
+.navbar__clickable:hover {
+  background-color: whitesmoke;
+  color: Black;
+}
+
+.navbar__clickable:hover {
+  background-color: whitesmoke;
+  color: Black;
+}
+
+.navbar__clickable:active:focus {
+  background-color: white;
+  color: black;
 }
 
 /* Holy fuck what a tyomaa
