@@ -3,6 +3,7 @@
 @import './modules/navbar';
 
 @import url('https://fonts.googleapis.com/css?family=monospace&display=swap');
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
 html {
-    font-family: monaco, Consolas, Lucida Console, monospace;
+    font-family: 'Fira Code', monospace;
 }
