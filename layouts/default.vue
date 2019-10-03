@@ -21,13 +21,13 @@
         </nuxt-link>
       </div>
       <div class="navbar__lang">
-        <nuxt-link class="navbar__item navbar__clickable" to="/">
+        <nuxt-link class="navbar__item navbar__clickable" :to="switchLocalePath('fi')">
           {{ $t('navigation.fi') }}
         </nuxt-link>
         <span class="navbar__item">
           /
         </span>
-        <nuxt-link class="navbar__item navbar__clickable" to="/en">
+        <nuxt-link class="navbar__item navbar__clickable" :to="switchLocalePath('en')">
           {{ $t('navigation.en') }}
         </nuxt-link>
       </div>
