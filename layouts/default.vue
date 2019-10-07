@@ -2,21 +2,21 @@
   <div class="container">
     <nav class="navbar">
       <div class="navbar__icon">
-        <nuxt-link class="navbar__item navbar__clickable" to="/guild">
+        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('guild')">
           {{ $t('navigation.guild') }}
         </nuxt-link>
       </div>
       <div class="navbar__menu">
-        <nuxt-link class="navbar__item navbar__clickable" to="/freshmen">
+        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('freshmen')">
           {{ $t('navigation.freshmen') }}
         </nuxt-link>
-        <nuxt-link class="navbar__item navbar__clickable" to="/abi">
+        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('abi')">
           {{ $t('navigation.abi') }}
         </nuxt-link>
-        <nuxt-link class="navbar__item navbar__clickable" to="/members">
+        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('members')">
           {{ $t('navigation.members') }}
         </nuxt-link>
-        <nuxt-link class="navbar__item navbar__clickable" to="/companies">
+        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('companies')">
           {{ $t('navigation.companies') }}
         </nuxt-link>
       </div>
