@@ -1,6 +1,9 @@
 {
     "guild": "Kilta",
-    "freshmen": "Fuksit",
     "abi": "Abit",
-    "companies": "Yrityksille"
+    "freshmen": "Fuksit",
+    "members": "Kiltalaisille",
+    "companies": "Yrityksille",
+    "fi":"FI",
+    "en":"EN"
 }

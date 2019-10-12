@@ -1,6 +1,9 @@
 {
     "guild": "Guild",
+    "abi": "Applicants",
     "freshmen": "Freshmen",
-    "abi": "Abit",
-    "companies": "Companies"
+    "members": "Members",
+    "companies": "Companies",
+    "fi":"FI",
+    "en":"EN"
 }
