@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <v-locale />
     <nav class="navbar">
       <div class="navbar__icon">
         <nuxt-link class="navbar__item navbar__clickable" :to="localePath('guild')">
@@ -35,6 +36,16 @@
     <nuxt />
   </div>
 </template>
+
+<script>
+import VLocale from '../components/locale'
+export default {
+  name: 'DefaultLayout',
+  components: {
+    VLocale
+  }
+}
+</script>
 
 <style>
 
