@@ -30,7 +30,6 @@ export default {
     nextLang() {
       let index = this.index + 1
       if (index >= this.langs.length) index = 0
-      console.log(index)
       return this.langs[index]
     }
   }
