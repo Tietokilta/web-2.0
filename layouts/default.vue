@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <v-locale />
     <nav class="navbar">
       <div class="navbar__icon">
         <nuxt-link class="navbar__item navbar__clickable" :to="localePath('guild')">
@@ -22,15 +21,7 @@
         </nuxt-link>
       </div>
       <div class="navbar__lang">
-        <nuxt-link class="navbar__item navbar__clickable" :to="switchLocalePath('fi')">
-          {{ $t('navigation.fi') }}
-        </nuxt-link>
-        <span class="navbar__item">
-          /
-        </span>
-        <nuxt-link class="navbar__item navbar__clickable" :to="switchLocalePath('en')">
-          {{ $t('navigation.en') }}
-        </nuxt-link>
+        <v-locale class="navbar__item navbar__clickable" />
       </div>
     </nav>
     <nuxt />
