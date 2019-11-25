@@ -66,9 +66,39 @@
   color: black;
 }
 
+
+.burger__menu {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  flex: max-content;
+  @media screen and (min-width: $desktop){
+    display: none;
+  }
+  // Don't show the checkbox
+  > input {
+    display: none;
+    float: right;
+  }
+  // Don't show the Span
+  > span {
+    > * {
+      display: none;
+      width: 80%;
+    }        
+  }
+  > input:checked ~ label + span {
+    > * {
+      color: black;
+      display: block;
+    }
+  }
+}
+
 /* Holy fuck what a tyomaa
-  This uses some dark magic to make a burger
+  This uses some dark magic to make a c
 */
+
 .burger {
   font-size: 30px;
   display: block;
@@ -76,29 +106,9 @@
   width: $burger-size;
   padding: $burger-size / 2;
   padding-top: $burger-size * 0.75;
-  > input {
-    display: none;
-  }
-  > input ~ span {
-    > * {
-      display: none; 
-    }        
-  }
-  > input:checked ~ span {
-    > * {
-      color: black;
-      display: block;
-      border-top: ($burger-size * 0.1) solid $black;
-      border-color: green;
-    }
-  }
-  @media screen and (min-width: $desktop){
-    display: none;
-  }
   background-image: url("~assets/svg/burger.svg");
   background-repeat: no-repeat; //remove oneday
   filter:invert(100%);
-
 }
 
 .burger:hover {
