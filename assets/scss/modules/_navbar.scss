@@ -84,7 +84,7 @@
   > span {
     > * {
       display: none;
-      width: 80%;
+      width: 80%; //TODO figure out some proper way to set width
     }        
   }
   > input:checked ~ label + span {
@@ -94,10 +94,6 @@
     }
   }
 }
-
-/* Holy fuck what a tyomaa
-  This uses some dark magic to make a c
-*/
 
 .burger {
   font-size: 30px;
