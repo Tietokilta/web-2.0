@@ -3,7 +3,7 @@
   padding-bottom: 1rem;
   margin-bottom: 0rem;
   font-size: 0; //to get rid of the funky spaces
-  background-color: black;
+  background-color: gray;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -31,11 +31,12 @@
 .navbar__lang {
   align-content: right;
   text-align: right;
+  @media screen and (max-width: $desktop) {
+    display: none;
+    flex-direction: column;
+  }
 }
 
-.burger:hover {
-  background-color:black;
-}
 
 .navbar__item {
   align-content: center;
@@ -65,22 +66,47 @@
   color: black;
 }
 
-/* Holy fuck what a tyomaa
-  This uses some dark magic to make a burger
-*/
+
+.burger__menu {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  flex: max-content;
+  @media screen and (min-width: $desktop){
+    display: none;
+  }
+  // Don't show the checkbox
+  > input {
+    display: none;
+    float: right;
+  }
+  // Don't show the Span
+  > span {
+    > * {
+      display: none;
+      width: 80%; //TODO figure out some proper way to set width
+    }        
+  }
+  > input:checked ~ label + span {
+    > * {
+      color: black;
+      display: block;
+    }
+  }
+}
+
 .burger {
+  font-size: 30px;
   display: block;
   float: right;
   width: $burger-size;
   padding: $burger-size / 2;
   padding-top: $burger-size * 0.75;
-  > span {
-    display: block;
-    height: $burger-size / 4;
-    border-top: ($burger-size * 0.1) solid $black;
-    border-color: $black;
-  }
-  @media screen and (min-width: $desktop){
-    display: none;
-  }
+  background-image: url("~assets/svg/burger.svg");
+  background-repeat: no-repeat; //remove oneday
+  filter:invert(100%);
+}
+
+.burger:hover {
+  // filter:invert(0%);
 }
