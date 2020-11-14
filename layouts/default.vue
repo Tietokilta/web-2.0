@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="navbar">
       <div class="navbar__icon">
-        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('guild')">
+        <nuxt-link class="navbar__item navbar__clickable" :to="localePath('home')">
           {{ $t('navigation.guild') }}
         </nuxt-link>
       </div>

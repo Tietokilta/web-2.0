@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.6",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.14.7",
     "nuxt-i18n": "^5.12.7"
   },
   "devDependencies": {
