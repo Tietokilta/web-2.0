@@ -9,11 +9,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ]
+    ],
   },
   /*
   ** Customize the progress-bar color
@@ -23,7 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/scss/main.scss'
+    '@/assets/scss/main.scss',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -45,7 +45,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-    }
-  }
+    extend (config, ctx) {
+    },
+  },
 }

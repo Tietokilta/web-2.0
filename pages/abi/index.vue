@@ -7,10 +7,10 @@ import abit from '../../markdown/abi/index.md'
 export default {
   name: 'Abi',
   computed: {
-    abit() {
+    abit () {
       return abit
-    }
-  }
+    },
+  },
 }
 </script>
 

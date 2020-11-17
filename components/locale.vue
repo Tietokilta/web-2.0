@@ -13,25 +13,27 @@
 export default {
   name: 'Locale',
 
-  data() {
+  data () {
     return {
-      langs: ['fi', 'en']
+      langs: ['fi', 'en'],
     }
   },
   computed: {
-    currentLocale() {
-      return this.$store.state.i18n.locale
+    currentLocale () {
+      return this.$i18n.locale
     },
-    index() {
-      return this.langs.indexOf(this.$store.state.i18n.locale)
-    }
+    index () {
+      return this.langs.indexOf(this.$i18n.locale)
+    },
   },
   methods: {
-    nextLang() {
+    nextLang () {
       let index = this.index + 1
-      if (index >= this.langs.length) index = 0
+      if (index >= this.langs.length) {
+        index = 0
+      }
       return this.langs[index]
-    }
-  }
+    },
+  },
 }
 </script>

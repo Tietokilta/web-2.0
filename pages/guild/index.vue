@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'Guild'
+  name: 'Guild',
 }
 </script>
 

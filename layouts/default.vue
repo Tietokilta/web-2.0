@@ -25,8 +25,8 @@
       </div>
 
       <div class="burger__menu">
-        <input type="checkbox" checked="true" id="burger_button" />
-        <label for="burger_button" class="burger"/>
+        <input id="burger_button" type="checkbox" checked="true">
+        <label for="burger_button" class="burger" />
         <span>
           <nuxt-link class="navbar__item navbar__clickable" :to="localePath('freshmen')">
             {{ $t('navigation.freshmen') }}
@@ -52,8 +52,8 @@ import VLocale from '../components/locale'
 export default {
   name: 'DefaultLayout',
   components: {
-    VLocale
-  }
+    VLocale,
+  },
 }
 </script>
 

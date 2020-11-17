@@ -8,5 +8,5 @@ import fi from './fi'
 
 export default {
   en,
-  fi
+  fi,
 }

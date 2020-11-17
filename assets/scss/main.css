@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=monospace&display=swap");
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
+  font-size: 0;
+  background-color: gray;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__menu {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-flex: max-content;
+      -ms-flex: max-content;
+          flex: max-content;
+}
+
+@media screen and (max-width: 1088px) {
+  .navbar__menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar__menu--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3.5rem;
+}
+
+.navbar__icon {
+  -ms-flex-line-pack: left;
+      align-content: left;
+  text-align: left;
+}
+
+.navbar__lang {
+  -ms-flex-line-pack: right;
+      align-content: right;
+  text-align: right;
+}
+
+@media screen and (max-width: 1088px) {
+  .navbar__lang {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.navbar__item {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+  color: whitesmoke;
+  display: inline-block;
+}
+
+.navbar__clickable {
+  padding: 0rem 0.75rem;
+}
+
+.navbar__clickable:hover {
+  background-color: whitesmoke;
+  color: Black;
+}
+
+.navbar__clickable:hover {
+  background-color: whitesmoke;
+  color: Black;
+}
+
+.navbar__clickable:active:focus {
+  background-color: white;
+  color: black;
+}
+
+.burger__menu {
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-flex: max-content;
+      -ms-flex: max-content;
+          flex: max-content;
+}
+
+@media screen and (min-width: 1088px) {
+  .burger__menu {
+    display: none;
+  }
+}
+
+.burger__menu > input {
+  display: none;
+  float: right;
+}
+
+.burger__menu > span > * {
+  display: none;
+  width: 80%;
+}
+
+.burger__menu > input:checked ~ label + span > * {
+  color: black;
+  display: block;
+}
+
+.burger {
+  font-size: 30px;
+  display: block;
+  float: right;
+  width: 1.5rem;
+  padding: 0.75rem;
+  padding-top: 1.125rem;
+  background-image: url("~assets/svg/burger.svg");
+  background-repeat: no-repeat;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+html {
+  font-family: 'Fira Code', monospace;
+  background: black;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=main.css.map */
